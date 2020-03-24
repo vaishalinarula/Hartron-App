@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    -->
+
+    <!--
+    <color name="colorPrimary">#ff669900</color>
+    <color name="colorPrimaryDark">#4E7000</color>
+    <color name="colorAccent">#ffff8800</color>
+     -->
+
+    <!--
+    <color name="colorPrimary">#ff0099cc</color>
+    <color name="colorPrimaryDark">#036B8A</color>
+    <color name="colorAccent">#ffff8800</color>
+    -->
+    <color name="colorPrimary">#0277bd</color>
+    <color name="colorPrimaryDark">#004c8c</color>
+    <color name="colorAccent">#ffff8800</color>
+
+    <color name="appColorDark">#036B8A</color>
+    <color name="appColor">#ff0099cc</color>
+
+
+</resources>

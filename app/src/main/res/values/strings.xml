@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Hartron</string>
+    <string name="title_home">Home</string>
+    <string name="title_contact_us">Contact Us</string>
+    <string name="title_connect_with_us">Connect With Us</string>
+    <string name="update_message">Update app new version is available with new features</string>
+    <string name="update_now">UPDATE</string>
+    <string name="cancel">CANCEL</string>
+</resources>

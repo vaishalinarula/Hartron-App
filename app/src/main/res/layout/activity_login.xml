@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingHorizontal="16dp"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:id="@+id/login_banner_hartron"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:src="@drawable/hartron_small_banner" />
+    <ImageView
+        android:visibility="gone"
+        android:id="@+id/login_banner_hiit"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:src="@drawable/logo_hiit" />
+
+    <RadioGroup
+        android:id="@+id/user_type_rg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:id="@+id/hartron_rb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hartron (Student)"></androidx.appcompat.widget.AppCompatRadioButton>
+
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:id="@+id/hiit_rb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="HIIT (Student)"></androidx.appcompat.widget.AppCompatRadioButton>
+
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:id="@+id/faculty_rb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Faculty"></androidx.appcompat.widget.AppCompatRadioButton>
+
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:id="@+id/admin_rb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Admin"></androidx.appcompat.widget.AppCompatRadioButton>
+
+    </RadioGroup>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/hint_msg_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Enter Student id and password *"
+        android:textColor="@android:color/holo_red_dark"
+        android:visibility="invisible"></androidx.appcompat.widget.AppCompatTextView>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+        <EditText
+            android:id="@+id/user_id_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="User Id"
+            android:inputType="text" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+        <EditText
+            android:id="@+id/password_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="text"></EditText>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/login_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/rounded_button"
+        android:text="Login"
+        android:textColor="@android:color/white"
+        android:textSize="22sp"></Button>
+
+    <ProgressBar
+        android:id="@+id/login_progress_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:visibility="invisible"></ProgressBar>
+
+</LinearLayout>
